@@ -234,7 +234,7 @@ requiredReactEnvVars.forEach(envVar => {
 
 4. **Frontend API Calls Failed**
    - Check REACT_APP_API_URL
-   - Verify backend is running on correct port
+   - Verify backend is running on the correct port
    - Check CORS configuration
 
 ## 📞 **Support**
@@ -245,5 +245,3 @@ If you encounter issues with environment configuration, please check:
 3. Firewall/network connectivity
 4. Service dependencies are running
 
----
-*Configuration Guide by: MiniMax Agent | Date: 2025-10-03*
