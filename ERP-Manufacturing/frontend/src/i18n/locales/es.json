@@ -34,7 +34,11 @@
     "settings": "Configuración",
     "help": "Ayuda",
     "about": "Acerca de",
-    "version": "Versión"
+    "version": "Versión",
+    "create": "Crear",
+    "update": "Actualizar",
+    "of": "de",
+    "moreThan": "más de"
   },
   "navigation": {
     "dashboard": "Panel de Control",
@@ -163,6 +167,72 @@
     "quantity": "Cantidad",
     "unitPrice": "Precio Unitario",
     "totalValue": "Valor Total"
+  },
+  "users": {
+    "title": "Gestión de Usuarios",
+    "subtitle": "Gestionar usuarios del sistema, roles y permisos",
+    "users": "Usuarios",
+    "addUser": "Agregar Usuario",
+    "editUser": "Editar Usuario",
+    "createUser": "Crear Usuario",
+    "deleteUser": "Eliminar Usuario",
+    "activate": "Activar",
+    "deactivate": "Desactivar",
+    "searchPlaceholder": "Buscar por nombre o email...",
+    "filterByRole": "Filtrar por Rol",
+    "filterByStatus": "Filtrar por Estado",
+    "noUsers": "No se encontraron usuarios",
+    "table": {
+      "user": "Usuario",
+      "email": "Email",
+      "role": "Rol",
+      "status": "Estado",
+      "createdAt": "Creado",
+      "actions": "Acciones"
+    },
+    "form": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Email",
+      "role": "Rol",
+      "password": "Contraseña",
+      "newPassword": "Nueva Contraseña",
+      "passwordPlaceholder": "Dejar vacío para mantener contraseña actual"
+    },
+    "roles": {
+      "admin": "Administrador",
+      "manager": "Gerente",
+      "production": "Producción",
+      "sales": "Ventas",
+      "quality": "Calidad",
+      "maintenance": "Mantenimiento",
+      "user": "Usuario"
+    },
+    "status": {
+      "active": "Activo",
+      "inactive": "Inactivo"
+    },
+    "validation": {
+      "firstNameRequired": "El nombre es requerido",
+      "lastNameRequired": "El apellido es requerido",
+      "emailRequired": "El email es requerido",
+      "invalidEmail": "Formato de email inválido",
+      "roleRequired": "El rol es requerido",
+      "passwordRequired": "La contraseña es requerida",
+      "passwordMinLength": "La contraseña debe tener al menos 8 caracteres"
+    },
+    "confirmDelete": {
+      "title": "Eliminar Usuario",
+      "message": "¿Está seguro que desea eliminar {{name}}? Esta acción no se puede deshacer."
+    },
+    "confirmActivate": {
+      "title": "Activar Usuario",
+      "message": "¿Está seguro que desea activar {{name}}?"
+    },
+    "confirmDeactivate": {
+      "title": "Desactivar Usuario",
+      "message": "¿Está seguro que desea desactivar {{name}}?"
+    }
   },
   "language": {
     "title": "Idioma",

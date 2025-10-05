@@ -23,7 +23,11 @@
     "previous": "Précédent",
     "view": "Voir",
     "actions": "Actions",
-    "settings": "Paramètres"
+    "settings": "Paramètres",
+    "create": "Créer",
+    "update": "Mettre à jour",
+    "of": "de",
+    "moreThan": "plus de"
   },
   "navigation": {
     "dashboard": "Tableau de Bord",
@@ -145,6 +149,72 @@
     "updated": "Mis à jour avec succès",
     "deleted": "Supprimé avec succès",
     "created": "Créé avec succès"
+  },
+  "users": {
+    "title": "Gestion des Utilisateurs",
+    "subtitle": "Gérer les utilisateurs du système, les rôles et les permissions",
+    "users": "Utilisateurs",
+    "addUser": "Ajouter Utilisateur",
+    "editUser": "Modifier Utilisateur",
+    "createUser": "Créer Utilisateur",
+    "deleteUser": "Supprimer Utilisateur",
+    "activate": "Activer",
+    "deactivate": "Désactiver",
+    "searchPlaceholder": "Rechercher par nom ou email...",
+    "filterByRole": "Filtrer par Rôle",
+    "filterByStatus": "Filtrer par Statut",
+    "noUsers": "Aucun utilisateur trouvé",
+    "table": {
+      "user": "Utilisateur",
+      "email": "Email",
+      "role": "Rôle",
+      "status": "Statut",
+      "createdAt": "Créé",
+      "actions": "Actions"
+    },
+    "form": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "role": "Rôle",
+      "password": "Mot de passe",
+      "newPassword": "Nouveau mot de passe",
+      "passwordPlaceholder": "Laisser vide pour conserver le mot de passe actuel"
+    },
+    "roles": {
+      "admin": "Administrateur",
+      "manager": "Gestionnaire",
+      "production": "Production",
+      "sales": "Ventes",
+      "quality": "Qualité",
+      "maintenance": "Maintenance",
+      "user": "Utilisateur"
+    },
+    "status": {
+      "active": "Actif",
+      "inactive": "Inactif"
+    },
+    "validation": {
+      "firstNameRequired": "Le prénom est requis",
+      "lastNameRequired": "Le nom est requis",
+      "emailRequired": "L'email est requis",
+      "invalidEmail": "Format d'email invalide",
+      "roleRequired": "Le rôle est requis",
+      "passwordRequired": "Le mot de passe est requis",
+      "passwordMinLength": "Le mot de passe doit contenir au moins 8 caractères"
+    },
+    "confirmDelete": {
+      "title": "Supprimer Utilisateur",
+      "message": "Êtes-vous sûr de vouloir supprimer {{name}} ? Cette action ne peut pas être annulée."
+    },
+    "confirmActivate": {
+      "title": "Activer Utilisateur",
+      "message": "Êtes-vous sûr de vouloir activer {{name}} ?"
+    },
+    "confirmDeactivate": {
+      "title": "Désactiver Utilisateur",
+      "message": "Êtes-vous sûr de vouloir désactiver {{name}} ?"
+    }
   },
   "language": {
     "title": "Langue",

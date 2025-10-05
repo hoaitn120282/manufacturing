@@ -34,7 +34,11 @@
     "settings": "Cài đặt",
     "help": "Trợ giúp",
     "about": "Giới thiệu",
-    "version": "Phiên bản"
+    "version": "Phiên bản",
+    "create": "Tạo",
+    "update": "Cập nhật",
+    "of": "của",
+    "moreThan": "hơn"
   },
   "navigation": {
     "dashboard": "Bảng điều khiển",
@@ -362,32 +366,69 @@
   },
   "users": {
     "title": "Quản lý người dùng",
+    "subtitle": "Quản lý người dùng hệ thống, vai trò và quyền hạn",
     "users": "Người dùng",
-    "roles": "Vai trò",
-    "permissions": "Quyền hạn",
-    "groups": "Nhóm",
-    "access": "Truy cập",
-    "security": "Bảo mật",
-    "audit": "Kiểm toán",
-    "sessions": "Phiên",
-    "login": "Đăng nhập",
-    "logout": "Đăng xuất",
     "addUser": "Thêm người dùng",
     "editUser": "Sửa người dùng",
+    "createUser": "Tạo người dùng",
     "deleteUser": "Xóa người dùng",
-    "username": "Tên đăng nhập",
-    "email": "Email",
-    "fullName": "Họ tên",
-    "phone": "Điện thoại",
-    "role": "Vai trò",
-    "status": "Trạng thái",
-    "lastLogin": "Đăng nhập cuối",
-    "created": "Tạo",
-    "updated": "Cập nhật",
-    "admin": "Quản trị viên",
-    "manager": "Quản lý",
-    "operator": "Người vận hành",
-    "viewer": "Người xem"
+    "activate": "Kích hoạt",
+    "deactivate": "Vô hiệu hóa",
+    "searchPlaceholder": "Tìm kiếm theo tên hoặc email...",
+    "filterByRole": "Lọc theo vai trò",
+    "filterByStatus": "Lọc theo trạng thái",
+    "noUsers": "Không tìm thấy người dùng",
+    "table": {
+      "user": "Người dùng",
+      "email": "Email",
+      "role": "Vai trò",
+      "status": "Trạng thái",
+      "createdAt": "Ngày tạo",
+      "actions": "Thao tác"
+    },
+    "form": {
+      "firstName": "Tên",
+      "lastName": "Họ",
+      "email": "Email",
+      "role": "Vai trò",
+      "password": "Mật khẩu",
+      "newPassword": "Mật khẩu mới",
+      "passwordPlaceholder": "Để trống để giữ mật khẩu hiện tại"
+    },
+    "roles": {
+      "admin": "Quản trị viên",
+      "manager": "Quản lý",
+      "production": "Sản xuất",
+      "sales": "Bán hàng",
+      "quality": "Chất lượng",
+      "maintenance": "Bảo trì",
+      "user": "Người dùng"
+    },
+    "status": {
+      "active": "Hoạt động",
+      "inactive": "Không hoạt động"
+    },
+    "validation": {
+      "firstNameRequired": "Tên là bắt buộc",
+      "lastNameRequired": "Họ là bắt buộc",
+      "emailRequired": "Email là bắt buộc",
+      "invalidEmail": "Định dạng email không hợp lệ",
+      "roleRequired": "Vai trò là bắt buộc",
+      "passwordRequired": "Mật khẩu là bắt buộc",
+      "passwordMinLength": "Mật khẩu phải có ít nhất 8 ký tự"
+    },
+    "confirmDelete": {
+      "title": "Xóa người dùng",
+      "message": "Bạn có chắc chắn muốn xóa {{name}}? Hành động này không thể hoàn tác."
+    },
+    "confirmActivate": {
+      "title": "Kích hoạt người dùng",
+      "message": "Bạn có chắc chắn muốn kích hoạt {{name}}?"
+    },
+    "confirmDeactivate": {
+      "title": "Vô hiệu hóa người dùng",
+      "message": "Bạn có chắc chắn muốn vô hiệu hóa {{name}}?"
+    }
   },
   "profile": {
     "title": "Hồ sơ người dùng",

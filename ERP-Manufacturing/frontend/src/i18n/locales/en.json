@@ -34,7 +34,11 @@
     "settings": "Settings",
     "help": "Help",
     "about": "About",
-    "version": "Version"
+    "version": "Version",
+    "create": "Create",
+    "update": "Update",
+    "of": "of",
+    "moreThan": "more than"
   },
   "navigation": {
     "dashboard": "Dashboard",
@@ -362,32 +366,69 @@
   },
   "users": {
     "title": "User Management",
+    "subtitle": "Manage system users, roles, and permissions",
     "users": "Users",
-    "roles": "Roles",
-    "permissions": "Permissions",
-    "groups": "Groups",
-    "access": "Access",
-    "security": "Security",
-    "audit": "Audit",
-    "sessions": "Sessions",
-    "login": "Login",
-    "logout": "Logout",
     "addUser": "Add User",
     "editUser": "Edit User",
+    "createUser": "Create User",
     "deleteUser": "Delete User",
-    "username": "Username",
-    "email": "Email",
-    "fullName": "Full Name",
-    "phone": "Phone",
-    "role": "Role",
-    "status": "Status",
-    "lastLogin": "Last Login",
-    "created": "Created",
-    "updated": "Updated",
-    "admin": "Admin",
-    "manager": "Manager",
-    "operator": "Operator",
-    "viewer": "Viewer"
+    "activate": "Activate",
+    "deactivate": "Deactivate",
+    "searchPlaceholder": "Search users by name or email...",
+    "filterByRole": "Filter by Role",
+    "filterByStatus": "Filter by Status",
+    "noUsers": "No users found",
+    "table": {
+      "user": "User",
+      "email": "Email",
+      "role": "Role",
+      "status": "Status",
+      "createdAt": "Created",
+      "actions": "Actions"
+    },
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "role": "Role",
+      "password": "Password",
+      "newPassword": "New Password",
+      "passwordPlaceholder": "Leave empty to keep current password"
+    },
+    "roles": {
+      "admin": "Administrator",
+      "manager": "Manager",
+      "production": "Production",
+      "sales": "Sales",
+      "quality": "Quality",
+      "maintenance": "Maintenance",
+      "user": "User"
+    },
+    "status": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "validation": {
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "emailRequired": "Email is required",
+      "invalidEmail": "Invalid email format",
+      "roleRequired": "Role is required",
+      "passwordRequired": "Password is required",
+      "passwordMinLength": "Password must be at least 8 characters"
+    },
+    "confirmDelete": {
+      "title": "Delete User",
+      "message": "Are you sure you want to delete {{name}}? This action cannot be undone."
+    },
+    "confirmActivate": {
+      "title": "Activate User",
+      "message": "Are you sure you want to activate {{name}}?"
+    },
+    "confirmDeactivate": {
+      "title": "Deactivate User",
+      "message": "Are you sure you want to deactivate {{name}}?"
+    }
   },
   "profile": {
     "title": "User Profile",

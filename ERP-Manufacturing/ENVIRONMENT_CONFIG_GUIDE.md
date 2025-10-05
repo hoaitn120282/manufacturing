@@ -236,3 +236,14 @@ requiredReactEnvVars.forEach(envVar => {
    - Check REACT_APP_API_URL
    - Verify backend is running on correct port
    - Check CORS configuration
+
+## 📞 **Support**
+
+If you encounter issues with environment configuration, please check:
+1. All required variables are set
+2. Values match your infrastructure
+3. Firewall/network connectivity
+4. Service dependencies are running
+
+---
+*Configuration Guide by: MiniMax Agent | Date: 2025-10-03*

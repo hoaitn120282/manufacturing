@@ -23,7 +23,11 @@
     "previous": "Vorherig",
     "view": "Ansehen",
     "actions": "Aktionen",
-    "settings": "Einstellungen"
+    "settings": "Einstellungen",
+    "create": "Erstellen",
+    "update": "Aktualisieren",
+    "of": "von",
+    "moreThan": "mehr als"
   },
   "navigation": {
     "dashboard": "Dashboard",
@@ -145,6 +149,72 @@
     "updated": "Erfolgreich aktualisiert",
     "deleted": "Erfolgreich gelöscht",
     "created": "Erfolgreich erstellt"
+  },
+  "users": {
+    "title": "Benutzerverwaltung",
+    "subtitle": "Systembenutzer, Rollen und Berechtigungen verwalten",
+    "users": "Benutzer",
+    "addUser": "Benutzer hinzufügen",
+    "editUser": "Benutzer bearbeiten",
+    "createUser": "Benutzer erstellen",
+    "deleteUser": "Benutzer löschen",
+    "activate": "Aktivieren",
+    "deactivate": "Deaktivieren",
+    "searchPlaceholder": "Nach Name oder E-Mail suchen...",
+    "filterByRole": "Nach Rolle filtern",
+    "filterByStatus": "Nach Status filtern",
+    "noUsers": "Keine Benutzer gefunden",
+    "table": {
+      "user": "Benutzer",
+      "email": "E-Mail",
+      "role": "Rolle",
+      "status": "Status",
+      "createdAt": "Erstellt",
+      "actions": "Aktionen"
+    },
+    "form": {
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail",
+      "role": "Rolle",
+      "password": "Passwort",
+      "newPassword": "Neues Passwort",
+      "passwordPlaceholder": "Leer lassen, um aktuelles Passwort zu behalten"
+    },
+    "roles": {
+      "admin": "Administrator",
+      "manager": "Manager",
+      "production": "Produktion",
+      "sales": "Verkauf",
+      "quality": "Qualität",
+      "maintenance": "Wartung",
+      "user": "Benutzer"
+    },
+    "status": {
+      "active": "Aktiv",
+      "inactive": "Inaktiv"
+    },
+    "validation": {
+      "firstNameRequired": "Vorname ist erforderlich",
+      "lastNameRequired": "Nachname ist erforderlich",
+      "emailRequired": "E-Mail ist erforderlich",
+      "invalidEmail": "Ungültiges E-Mail-Format",
+      "roleRequired": "Rolle ist erforderlich",
+      "passwordRequired": "Passwort ist erforderlich",
+      "passwordMinLength": "Passwort muss mindestens 8 Zeichen haben"
+    },
+    "confirmDelete": {
+      "title": "Benutzer löschen",
+      "message": "Sind Sie sicher, dass Sie {{name}} löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden."
+    },
+    "confirmActivate": {
+      "title": "Benutzer aktivieren",
+      "message": "Sind Sie sicher, dass Sie {{name}} aktivieren möchten?"
+    },
+    "confirmDeactivate": {
+      "title": "Benutzer deaktivieren",
+      "message": "Sind Sie sicher, dass Sie {{name}} deaktivieren möchten?"
+    }
   },
   "language": {
     "title": "Sprache",

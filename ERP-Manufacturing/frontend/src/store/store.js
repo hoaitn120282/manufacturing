@@ -11,6 +11,7 @@ import hrmSlice from './slices/hrmSlice';
 import financeSlice from './slices/financeSlice';
 import procurementSlice from './slices/procurementSlice';
 import integrationSlice from './slices/integrationSlice';
+import usersSlice from './slices/usersSlice';
 
 export const store = configureStore({
   reducer: {
@@ -26,6 +27,7 @@ export const store = configureStore({
     finance: financeSlice,
     procurement: procurementSlice,
     integration: integrationSlice,
+    users: usersSlice,
   },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({

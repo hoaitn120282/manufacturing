@@ -34,7 +34,11 @@
     "settings": "设置",
     "help": "帮助",
     "about": "关于",
-    "version": "版本"
+    "version": "版本",
+    "create": "创建",
+    "update": "更新",
+    "of": "的",
+    "moreThan": "超过"
   },
   "navigation": {
     "dashboard": "仪表板",
@@ -362,32 +366,69 @@
   },
   "users": {
     "title": "用户管理",
+    "subtitle": "管理系统用户、角色和权限",
     "users": "用户",
-    "roles": "角色",
-    "permissions": "权限",
-    "groups": "组",
-    "access": "访问",
-    "security": "安全",
-    "audit": "审计",
-    "sessions": "会话",
-    "login": "登录",
-    "logout": "登出",
     "addUser": "添加用户",
     "editUser": "编辑用户",
+    "createUser": "创建用户",
     "deleteUser": "删除用户",
-    "username": "用户名",
-    "email": "邮箱",
-    "fullName": "全名",
-    "phone": "电话",
-    "role": "角色",
-    "status": "状态",
-    "lastLogin": "最后登录",
-    "created": "创建",
-    "updated": "更新",
-    "admin": "管理员",
-    "manager": "经理",
-    "operator": "操作员",
-    "viewer": "查看者"
+    "activate": "激活",
+    "deactivate": "停用",
+    "searchPlaceholder": "按姓名或邮箱搜索...",
+    "filterByRole": "按角色筛选",
+    "filterByStatus": "按状态筛选",
+    "noUsers": "未找到用户",
+    "table": {
+      "user": "用户",
+      "email": "邮箱",
+      "role": "角色",
+      "status": "状态",
+      "createdAt": "创建时间",
+      "actions": "操作"
+    },
+    "form": {
+      "firstName": "名",
+      "lastName": "姓",
+      "email": "邮箱",
+      "role": "角色",
+      "password": "密码",
+      "newPassword": "新密码",
+      "passwordPlaceholder": "留空保持当前密码"
+    },
+    "roles": {
+      "admin": "管理员",
+      "manager": "经理",
+      "production": "生产",
+      "sales": "销售",
+      "quality": "质量",
+      "maintenance": "维护",
+      "user": "用户"
+    },
+    "status": {
+      "active": "活跃",
+      "inactive": "非活跃"
+    },
+    "validation": {
+      "firstNameRequired": "名是必需的",
+      "lastNameRequired": "姓是必需的",
+      "emailRequired": "邮箱是必需的",
+      "invalidEmail": "无效的邮箱格式",
+      "roleRequired": "角色是必需的",
+      "passwordRequired": "密码是必需的",
+      "passwordMinLength": "密码至少需要8个字符"
+    },
+    "confirmDelete": {
+      "title": "删除用户",
+      "message": "您确定要删除{{name}}吗？此操作无法撤销。"
+    },
+    "confirmActivate": {
+      "title": "激活用户",
+      "message": "您确定要激活{{name}}吗？"
+    },
+    "confirmDeactivate": {
+      "title": "停用用户",
+      "message": "您确定要停用{{name}}吗？"
+    }
   },
   "profile": {
     "title": "用户资料",
