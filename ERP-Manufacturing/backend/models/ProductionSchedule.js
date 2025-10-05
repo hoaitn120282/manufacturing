@@ -27,6 +27,13 @@ const ProductionSchedule = sequelize.define('ProductionSchedule', {
     type: DataTypes.STRING,
     allowNull: false
   },
+  equipment_id: {
+    type: DataTypes.INTEGER,
+    references: {
+      model: 'equipment',
+      key: 'id'
+    }
+  },
   capacity_required: {
     type: DataTypes.DECIMAL(8, 2),
     defaultValue: 0

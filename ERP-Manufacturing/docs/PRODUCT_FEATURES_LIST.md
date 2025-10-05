@@ -4,7 +4,7 @@
 
 **Version:** 1.0  
 **Date:** October 2025  
-**Author:** GTS VIỆT NAM
+**Author:** MiniMax Agent
 
 ---
 

@@ -60,6 +60,13 @@ const InventoryTransaction = sequelize.define('InventoryTransaction', {
       key: 'id'
     }
   },
+  location_id: {
+    type: DataTypes.INTEGER,
+    references: {
+      model: 'stock_locations',
+      key: 'id'
+    }
+  },
   created_by: {
     type: DataTypes.INTEGER,
     references: {

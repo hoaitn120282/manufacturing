@@ -44,6 +44,13 @@ const Lot = sequelize.define('Lot', {
     type: DataTypes.ENUM('pending', 'approved', 'rejected', 'quarantine'),
     defaultValue: 'pending'
   },
+  location_id: {
+    type: DataTypes.INTEGER,
+    references: {
+      model: 'stock_locations',
+      key: 'id'
+    }
+  },
   notes: {
     type: DataTypes.TEXT
   }

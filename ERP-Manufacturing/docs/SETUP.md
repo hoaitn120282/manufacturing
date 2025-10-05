@@ -5,12 +5,14 @@
 Before setting up the Manufacturing ERP System, ensure you have the following installed:
 
 ### Required Software
+
 - **Node.js**: Version 16.x or higher
 - **npm**: Usually comes with Node.js
 - **PostgreSQL**: Version 12.x or higher
 - **Git**: For version control
 
 ### Optional Tools
+
 - **pgAdmin**: PostgreSQL administration tool
 - **Postman**: API testing tool
 - **VS Code**: Recommended code editor
@@ -22,12 +24,14 @@ Before setting up the Manufacturing ERP System, ensure you have the following in
 #### Install PostgreSQL
 
 **On Windows:**
+
 1. Download PostgreSQL installer from https://www.postgresql.org/download/windows/
 2. Run the installer and follow the setup wizard
 3. Remember the password you set for the `postgres` user
 4. Add PostgreSQL to your system PATH
 
 **On macOS:**
+
 ```bash
 # Using Homebrew
 brew install postgresql
@@ -35,6 +39,7 @@ brew services start postgresql
 ```
 
 **On Ubuntu/Debian:**
+
 ```bash
 sudo apt update
 sudo apt install postgresql postgresql-contrib
@@ -45,25 +50,27 @@ sudo systemctl enable postgresql
 #### Create Database
 
 1. **Access PostgreSQL:**
+
    ```bash
    # Login as postgres user
    sudo -u postgres psql
-   
+
    # Or on Windows
    psql -U postgres
    ```
 
 2. **Create Database and User:**
+
    ```sql
    -- Create database
    CREATE DATABASE manufacturing_erp;
-   
+
    -- Create user (optional)
    CREATE USER erp_user WITH PASSWORD 'your_password';
-   
+
    -- Grant privileges
    GRANT ALL PRIVILEGES ON DATABASE manufacturing_erp TO erp_user;
-   
+
    -- Exit
    \q
    ```
@@ -71,38 +78,42 @@ sudo systemctl enable postgresql
 ### 2. Backend Setup
 
 1. **Navigate to backend directory:**
+
    ```bash
    cd manufacturing-erp/backend
    ```
 
 2. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
 3. **Environment Configuration:**
+
    ```bash
    cp .env.example .env
    ```
 
 4. **Edit .env file:**
+
    ```env
    # Server Configuration
    PORT=5000
    NODE_ENV=development
-   
+
    # Database Configuration
    DB_HOST=localhost
    DB_PORT=5432
    DB_NAME=manufacturing_erp
    DB_USER=postgres
    DB_PASSWORD=your_postgres_password
-   
+
    # JWT Configuration
    JWT_SECRET=your_super_secret_jwt_key_minimum_32_characters
    JWT_EXPIRE=7d
    JWT_REFRESH_EXPIRE=30d
-   
+
    # Security
    BCRYPT_ROUNDS=12
    RATE_LIMIT_WINDOW=15
@@ -110,16 +121,18 @@ sudo systemctl enable postgresql
    ```
 
 5. **Initialize Database:**
+
    ```bash
    # Run database seeding (creates tables and sample data)
    npm run seed
    ```
 
 6. **Start Backend Server:**
+
    ```bash
    # Development mode with auto-restart
    npm run dev
-   
+
    # Or production mode
    npm start
    ```
@@ -129,21 +142,25 @@ sudo systemctl enable postgresql
 ### 3. Frontend Setup
 
 1. **Navigate to frontend directory:**
+
    ```bash
    cd ../frontend
    ```
 
 2. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
 3. **Environment Configuration:**
+
    ```bash
    cp .env.example .env
    ```
 
 4. **Edit .env file:**
+
    ```env
    REACT_APP_API_URL=http://localhost:5000/api
    REACT_APP_SOCKET_URL=http://localhost:5000
@@ -153,6 +170,7 @@ sudo systemctl enable postgresql
    ```
 
 5. **Start Frontend Server:**
+
    ```bash
    npm start
    ```
@@ -162,10 +180,12 @@ sudo systemctl enable postgresql
 ### 4. Verification
 
 1. **Check Backend:**
+
    - Visit http://localhost:5000/health
    - Should return: `{"status":"OK","timestamp":"...","uptime":...}`
 
 2. **Check Frontend:**
+
    - Visit http://localhost:3000
    - Should display the login page
 
@@ -180,6 +200,7 @@ sudo systemctl enable postgresql
 #### Database Connection Issues
 
 **Error: "ECONNREFUSED" or "Connection refused"**
+
 ```bash
 # Check if PostgreSQL is running
 sudo systemctl status postgresql  # Linux
@@ -191,6 +212,7 @@ brew services start postgresql  # macOS
 ```
 
 **Error: "database does not exist"**
+
 ```bash
 # Create the database
 createb manufacturing_erp
@@ -200,12 +222,14 @@ psql -U postgres -c "CREATE DATABASE manufacturing_erp;"
 ```
 
 **Error: "authentication failed"**
+
 - Check your database credentials in `.env`
 - Ensure the database user has proper permissions
 
 #### Node.js Issues
 
 **Error: "Cannot find module"**
+
 ```bash
 # Clear npm cache and reinstall
 npm cache clean --force
@@ -214,6 +238,7 @@ npm install
 ```
 
 **Error: "Port already in use"**
+
 ```bash
 # Find process using the port
 lsof -i :5000  # For backend
@@ -228,6 +253,7 @@ kill -9 <PID>
 #### Frontend Issues
 
 **Error: "Network Error" or API calls failing**
+
 - Ensure backend server is running on port 5000
 - Check REACT_APP_API_URL in frontend/.env
 - Verify CORS settings in backend
@@ -235,6 +261,7 @@ kill -9 <PID>
 ### Performance Optimization
 
 #### Database Optimization
+
 ```sql
 -- Create indexes for better performance
 CREATE INDEX idx_production_orders_status ON production_orders(status);
@@ -243,11 +270,13 @@ CREATE INDEX idx_sales_orders_customer ON sales_orders(customer_id);
 ```
 
 #### Backend Optimization
+
 - Enable compression middleware
 - Use Redis for session storage (optional)
 - Configure connection pooling
 
 #### Frontend Optimization
+
 - Enable production build optimizations
 - Use lazy loading for routes
 - Optimize bundle size
@@ -257,19 +286,20 @@ CREATE INDEX idx_sales_orders_customer ON sales_orders(customer_id);
 ### Environment Setup
 
 1. **Production Environment Variables:**
+
    ```env
    NODE_ENV=production
    PORT=5000
-   
+
    # Use production database
    DB_HOST=your-production-db-host
    DB_NAME=manufacturing_erp_prod
    DB_USER=your-production-user
    DB_PASSWORD=your-strong-production-password
-   
+
    # Strong JWT secret
    JWT_SECRET=your-very-long-and-secure-jwt-secret-key
-   
+
    # Security settings
    BCRYPT_ROUNDS=14
    RATE_LIMIT_WINDOW=15
@@ -277,23 +307,25 @@ CREATE INDEX idx_sales_orders_customer ON sales_orders(customer_id);
    ```
 
 2. **Build Frontend:**
+
    ```bash
    cd frontend
    npm run build
-   
+
    # Serve built files with backend
    cp -r build/* ../backend/public/
    ```
 
 3. **Process Management:**
+
    ```bash
    # Install PM2 for process management
    npm install -g pm2
-   
+
    # Start application
    cd backend
    pm2 start server.js --name "erp-backend"
-   
+
    # Save PM2 configuration
    pm2 save
    pm2 startup
@@ -313,10 +345,11 @@ CREATE INDEX idx_sales_orders_customer ON sales_orders(customer_id);
 ### Backup Strategy
 
 1. **Database Backup:**
+
    ```bash
    # Create backup
    pg_dump -U username -h hostname manufacturing_erp > backup.sql
-   
+
    # Restore backup
    psql -U username -h hostname manufacturing_erp < backup.sql
    ```
@@ -330,21 +363,25 @@ CREATE INDEX idx_sales_orders_customer ON sales_orders(customer_id);
 ## Next Steps
 
 1. **Customize the System:**
+
    - Modify company branding
    - Add custom fields
    - Configure business rules
 
 2. **User Management:**
+
    - Create user accounts
    - Assign roles and permissions
    - Configure user groups
 
 3. **Data Import:**
+
    - Import existing customer data
    - Import product catalog
    - Import inventory data
 
 4. **Integration:**
+
    - Connect to existing systems
    - Configure API integrations
    - Set up automated workflows
@@ -359,10 +396,11 @@ CREATE INDEX idx_sales_orders_customer ON sales_orders(customer_id);
 If you encounter any issues during setup:
 
 1. Check the logs:
+
    ```bash
    # Backend logs
    tail -f backend/logs/combined.log
-   
+
    # Frontend logs
    # Check browser console for errors
    ```
