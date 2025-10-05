@@ -333,4 +333,4 @@ For support and questions:
 
 **Manufacturing ERP System** - Streamlining manufacturing operations with modern technology.
 
-Made with ❤️ by MiniMax Agent
+DEVELOP BY GTS VIỆT NAM
