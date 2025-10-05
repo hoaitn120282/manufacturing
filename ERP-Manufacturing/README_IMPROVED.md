@@ -459,5 +459,4 @@ psql -d manufacturing_erp_prod -c "VACUUM ANALYZE;"
 Hệ thống hiện tại **sẵn sàng cho triển khai thương mại** và có thể scale theo nhu cầu business growth!
 
 ---
-
-**Made with ❤️ by MiniMax Agent** | **Ready for Production 🚀**
+DEVELOP BY GTS VIỆT NAM
