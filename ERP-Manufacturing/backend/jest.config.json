@@ -1,0 +1,27 @@
+{
+  "name": "manufacturing-erp-backend-tests",
+  "version": "1.0.0",
+  "description": "Test suite for Manufacturing ERP Backend",
+  "scripts": {
+    "test": "jest --detectOpenHandles --forceExit",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:ci": "jest --ci --coverage --watchAll=false"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "collectCoverageFrom": [
+      "controllers/**/*.js",
+      "middleware/**/*.js",
+      "models/**/*.js",
+      "routes/**/*.js",
+      "utils/**/*.js",
+      "!**/node_modules/**",
+      "!**/tests/**"
+    ],
+    "coverageDirectory": "coverage",
+    "coverageReporters": ["text", "lcov", "html"],
+    "testTimeout": 10000,
+    "setupFilesAfterEnv": ["<rootDir>/tests/setup.js"]
+  }
+}
